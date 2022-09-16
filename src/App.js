@@ -1,15 +1,21 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Card from './componentes/Card/Card';
+import Header from './componentes/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-          <Route  path='/' element={<Card />} />       
-      </Routes>
-
-    </div>
+    <>
+     <Header />
+        <div className="container">
+            <Routes>
+                <Route  path='/' element={<Card />} />       
+            </Routes>
+      </div>
+        
+    
+    </>
+   
   );
 }
 
